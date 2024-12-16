@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link-Keeper</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .email-heading {
+        color: #070707;
+        text-align: center;
+
+        /* padding: 5px; */
+      }
+
+      .email-header {
+        background-color: #4f8fd8;
+        color: #ffffff;
+        padding: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+
+      .email-body {
+        padding: 8px 20px;
+        color: #333333;
+        line-height: 1.6;
+      }
+
+      .email-body p {
+        margin: 20px 0;
+      }
+
+      .verify-button {
+        display: block; /* Makes the button a block element */
+        padding: 12px 24px;
+        background-color: #4f8fd8;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      .verify-button:hover {
+        background-color: #4c7aaf;
+      }
+
+      .footer {
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #777777;
+      }
+
+      .footer a {
+        color: #3d4e86;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        <img src="logo.png" alt="Company Logo" />
+        <h1>Link Keeper</h1>
+      </div>
+
+      <div class="email-body">
+        <div class="email-heading">
+          <h2>Email Verification</h2>
+        </div>
+        <h2>Hello [User's Name],</h2>
+        <p>
+          Your password is
+          <span style="color: rgb(99, 97, 97); font-weight: bolder"
+            >ABCDEF</span
+          >
+        </p>
+        <p>
+          Thank you for signing up with us! To complete your registration,
+          please verify your email address by clicking the button below:
+        </p>
+
+        <a href="[Verification Link]" class="verify-button">Verify Email</a>
+
+        <p>
+          If you did not create an account with us, please ignore this email.
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>
+          If you have any questions, feel free to
+          <a href="mailto:support@example.com">contact us</a>.
+        </p>
+        <p>&copy; 2024 Company Name. All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
